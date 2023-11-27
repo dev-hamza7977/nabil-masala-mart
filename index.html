@@ -19,14 +19,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="content">
     <section class="owl-car">
         <div class="navbar fixed-top">
             <nav class="navbar navbar-expand-lg w-100">
-                <div class="container bg-black p-3 px-3">
+                <div class="container nav-sec bg-black p-3 px-3">
                     <a class="navbar-brand text-white" href="#"><img src="images/logo.png" alt="logo" class="logo"
                             srcset=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,10 +36,8 @@
                             <a class="nav-link active text-white" href="#home" onclick="highlightTab(this)">HOME</a>
                             <a class="nav-link active text-white" href="#about-us" onclick="highlightTab(this)">ABOUT
                                 US</a>
-                            <a class="nav-link active text-white" href="#services" onclick="highlightTab(this)">OUR
-                                SERVICES</a>
-                            <a class="nav-link active text-white" href="#portfolio"
-                                onclick="highlightTab(this)">PORTFOLIO</a>
+                            <a class="nav-link active text-white" href="#our-products" onclick="highlightTab(this)">OUR
+                                PRODUCTS</a>
                             <a class="nav-link active text-white" href="#contact" onclick="highlightTab(this)">CONTACT
                                 US</a>
                         </div>
@@ -48,8 +46,8 @@
             </nav>
         </div>
 
-        <div class="owl-carousel owl-theme">
-            <div class="item">
+        <div class="owl-carousel owl-theme" id="owlcarousel1" data-aos="fade-up" data-aos-duration="3000">
+            <div class="item" id="home">
                 <div class="bg-img d-flex align-items-center justify-content-center">
                     <div class="row">
                         <div class="col-lg-12 d-flex align-items-center justify-content-center">
@@ -58,7 +56,9 @@
                                     dish with
                                     the
                                     richness of our
-                                    herbs and spices.</span> </h1>
+                                    herbs and spices.
+                                </span>
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -89,10 +89,10 @@
         </div>
     </section>
 
-    <section class="container our-best-products">
+    <section class="container our-best-products" data-aos="zoom-in" data-aos-duration="3000">
         <h1 class="best-product-title text-center my-5">OUR BEST PRODUCTS</h1>
         <div class="row">
-            <div class="col-lg-2 mx-5">
+            <div class="col-lg-2 mx-xxl-5 best-prod-col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/dalchini.jpg" class="card-img-top p-3" alt="...">
                     <div class="card-body text-center">
@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 mx-5">
+            <div class="col-lg-2 mx-xxl-5 best-prod-col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/lavang.jpg" class="card-img-top p-3" alt="...">
                     <div class="card-body text-center">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 mx-5">
+            <div class="col-lg-2 mx-xxl-5 best-prod-col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/masala velchi.png" class="card-img-top p-3" alt="...">
                     <div class="card-body text-center">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 mx-5">
+            <div class="col-lg-2 mx-xxl-5 best-prod-col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/hari-velchi.jpg" class="card-img-top p-2" alt="...">
                     <div class="card-body text-center">
@@ -142,9 +142,9 @@
         </div>
     </section>
 
-    <section class="abt-us mt-5">
+    <section class="abt-us mt-5" id="about-us">
         <div class="bg-img-abt-us">
-            <h1 class="text-center abt-us-tit pt-3">ABOUT US</h1>
+            <h1 class="text-center abt-us-tit pt-3" data-aos="flip-right" data-aos-duration="3000">ABOUT US</h1>
             <div class="row g-0">
                 <div class="col-lg-6">
                     <h1 class="title-abt-us-info">AT NABIL MASALA MART</h1>
@@ -158,6 +158,309 @@
         </div>
     </section>
 
+    <section class="container-fluid our-products pt-5" id="our-products">
+        <h1 class="products-title text-center pb-5">OUR PRODUCTS</h1>
+        <div class="owl-carousel" id="carousel2">
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/badiyan.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">BADIYAN</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/dagadful.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">DAGADFUL</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <!-- <div class="col-lg-12"> -->
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/dhana.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">DHANA</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/jaipatri.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">JAIPATRI</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/jaiphal.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">JAIPHAL</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i> t
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/kabab-chini.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">KABAB CHINI</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/kala-hing-khada.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">KALAHING KHADA</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/lavang-patta.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">LAVANG PATTA</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/maiputri.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">MAIPUTRI</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/nagkeshar.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">NAGKESAR</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/pimpri.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">PIMPRI</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/rai.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">RAI</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/safed-hing-khada.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">SAFEDHING KHADA</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/sahajeera.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">SAHJEERA</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/tajpatta.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">TAJPATTA</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/trifal.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">TRIFAL</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item mb-2 mt-2">
+                <div class="card product-card" style="width: 18rem;">
+                    <img src="images/zeera.jpg" class="card-img-top p-3 img-product" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center card-tit-best-product">ZEERA</h5>
+                        <p class="card-text text-center card-des-best-product pt-3"> <i>
+                                Nabil Masala Mart: Elevate your dishes with our premium, authentic spices. Explore rich
+                                and diverse flavors for a culinary experience like no other.</i></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container contact-us-sec pt-xxl-5 mb-5" id="contact">
+        <div class="contact-us">
+            <h1 class="contact-title text-center py-3">CONTACT US</h1>
+            <div class="row contact-us-row g-0">
+                <div class="col-lg-6 pt-xxl-5 contact-quote-sec" data-aos="flip-right" data-aos-duration="3000">
+                    <h1 class="contact-title text-center">ADDRESS</h1>
+                    <p class="contact-address text-center"> <i> NABIL MASALA MART: <br> Mahatma Phule Market, Gate No.
+                            2, Shop No. 3, Mohammed Ali Road, Thane Fish Market, Bazarpet Thane. </i></p>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d942.0127482365777!2d72.9783716!3d19.192975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9ae9b408881%3A0xd132032b9fdc7ee!2sNabil%20Masala%20Mart!5e0!3m2!1sen!2sin!4v1701077491429!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6 pt-xxl-5 text-center connect-sec" data-aos="flip-left" data-aos-duration="3000">
+                    <h1 class="connect-title">CONNECT WITH US:</h1>
+                    <div class="d-flex justify-content-evenly align-items-center">
+                        <a class="contact-a-tag" href="tel:+917208444823"><i
+                                class="fa-solid fa-phone fa-beat-fade fa-2xl me-2"></i>7208444823</a>
+
+                        <a class="contact-a-tag" href="
+                            https://api.whatsapp.com/send?phone=918452954362&amp;msg=hi"><i
+                                class="fa-brands fa-whatsapp fa-bounce fa-2xl me-2"></i></i>WHATSAPP
+                        </a>
+                    </div>
+                    <img src="images/logo.png" class="img-fluid contact-logo text-center" alt="logo" srcset="">
+                    <p class="px-3 quote-text-contact">NABIL MASALA MART: <br> <i> Where every spice tells a tale of
+                            rich
+                            flavors, authenticity, and
+                            culinary delight. Elevate your dishes with our premium selection and savor the essence of
+                            tradition in every spice.</i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <footer class="footer text-white">
+            <div class="container">
+                <div class="row g-0 ">
+                    <div class="col-md-4">
+                        <h5>Get in touch with us:</h5>
+                        <a href="#" class="mx-1"><i class="fa-brands fa-whatsapp"
+                                style="color: #3079f6; font-size: 25px;"></i> <span class="whatsapp-text">
+                                Whatsapp</span></a>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links:</h5>
+                        <div class="nav-underline">
+                            <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link text-white" href="#about-us">About Us</a>
+                            <a class="nav-link text-white" href="#our-products">Our Products</a>
+                            <a class="nav-link text-white" href="#contact">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="search-container">
+                            <form onsubmit="searchFunction(event)">
+                                <div class="input-group">
+                                    <input id="searchInput" type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p> <b class="text-warning">© 2023 NABIL MASALA MART. <br> All rights reserved. <br>
+                            Powered by WEB WONDERS
+                            <br><br>
+                            "Unlock the magic of your online presence with Web Wonders! Contact us today for exceptional
+                            website creation that goes beyond expectations. Let us help your business thrive.
+                            Call us now at [7977027359] or visit on for more information."
+                            <br>
+                            <p>Also Visit Us On:
+                                <a class="text-white" href="https://webwonder.netlify.app/"
+                                    target="_blank">webwonder.netlify.app</a>
+                            </p>
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -169,8 +472,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('#owlcarousel1').owlCarousel({
             loop: true,
             // margin: 10,
             nav: true,
@@ -180,6 +484,7 @@
             animateOut: 'animate__backOutUp',
             animateIn: 'animate__bounceInDown',
             items: 1,
+            navText: ["<span class='custom-nav-left-1'>❮</span>", "<span class='custom-nav-right-1'>❯</span>"],
             smartSpeed: 1000,
             responsive: {
                 0: {
@@ -193,6 +498,80 @@
                 }
             }
         })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Second Carousel
+            $('#carousel2').owlCarousel({
+                loop: true,
+                // margin: 10,
+                nav: true,
+                navText: ["<span class='custom-nav-left-2'><</span>", "<span class='custom-nav-right-2'>></span>"],
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: true,
+                animateOut: 'animate__backOutUp',
+                animateIn: 'animate__bounceInDown',
+                items: 1,
+                smartSpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        function searchFunction(event) {
+            event.preventDefault();
+
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var content = document.getElementById('content');
+            var paragraphs = content.getElementsByTagName('p');
+            var found = false;
+
+            removeHighlights();
+
+            for (var i = 0; i < paragraphs.length; i++) {
+                var text = paragraphs[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    var regex = new RegExp(input, "gi");
+                    var replacedHtml = paragraphs[i].innerHTML.replace(regex, function (match) {
+                        found = true;
+                        return '<span class="highlight">' + match + '</span>';
+                    });
+                    paragraphs[i].innerHTML = replacedHtml;
+
+                    // Scroll to the found word
+                    paragraphs[i].scrollIntoView({ behavior: "smooth", block: "center" });
+                    break; // Stop after the first occurrence is found
+                }
+            }
+
+            if (!found) {
+                alert('Word not found: ' + input);
+            }
+        }
+
+        function removeHighlights() {
+            var highlights = document.getElementsByClassName('highlight');
+            while (highlights.length > 0) {
+                var parent = highlights[0].parentNode;
+                var text = highlights[0].innerText;
+                parent.replaceChild(document.createTextNode(text), highlights[0]);
+            }
+        }
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

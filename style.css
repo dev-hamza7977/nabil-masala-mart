@@ -24,7 +24,7 @@
     width: 100%;
     height: 99.375vh;
 }
-
+ 
 .owl-nav{
     text-align: center;
     font-size: 20;
@@ -36,31 +36,23 @@
     width: 100%;
   }
 
-  
-.owl-carousel .owl-nav button.owl-next span,.owl-carousel .owl-nav button.owl-prev span{
-    position: relative;
-    top: -43px;
-}
-
-  
-  .owl-carousel .owl-nav button.owl-next,
-   .owl-carousel .owl-nav button.owl-prev{
+.custom-nav-left-1,
+.custom-nav-right-1 {
     border: 2px solid rgb(255, 153, 0);
-    background-color:rgba(240, 248, 255, 0);
-    border-radius: 100%;
-    height: 60px;
-    width: 60px;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
     margin: 10px 5px;
     color: rgb(11, 129, 0);
-    font-size: 80px;
+    font-size: 31px;
     position: relative;
-    top: -85px;
+    top: -95px;
     margin: 0px 20px 0px 20px;
-
-  }
-
-
-
+    padding: 10px;
+    display: block;
+}
+    
 .logo{
     width: 15vh;
 }
@@ -99,7 +91,7 @@
 
 
 
-.best-product-title{
+.best-product-title,.products-title,.contact-title,.connect-title{
     font-size: 50px;
     font-family: 'Spicy Rice', cursive;
     /* font-size: 16px; */
@@ -210,3 +202,166 @@
     height: calc(100% + 9px);
 }
 
+.custom-nav-left-2,
+.custom-nav-right-2 {
+    border: 2px solid rgb(255, 153, 0);
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 21%;
+    height: 29px;
+    width: 31px;
+    margin-right: -8px;
+    margin-left: -8px;
+    color: rgb(11, 129, 0);
+    font-size: 35px;
+    position: relative;
+    top: -197px;
+    /* margin: 0px 20px 0px 20px; */
+    padding: 10px;
+    /* display: block; */
+}
+
+.custom-nav-left-2:hover,
+.custom-nav-right-2:hover{
+    background-color: rgb(253, 215, 90);
+}
+
+.our-products{
+    background: linear-gradient(-45deg, #ebb4f6, #fcea77);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/* height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.img-product{
+    height: 30vh;
+}
+
+.footer{
+    background-image: url("images/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    padding: 20px;
+}
+.footer a{
+    color: #343a40;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #007bff;
+}
+.whatsapp-text,.web-adv-text{
+    font-family: 'Spicy Rice', cursive;
+    color: rgb(255, 145, 0);
+    font-size: 25px;
+}
+
+.product-card{
+    height: 34rem;
+}
+
+.contact-quote-sec{
+    border-color: rebeccapurple;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(-45deg, #f6e2b4, #77f3fc);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    padding: 5vh;
+}
+
+
+.connect-sec{
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(-45deg, #ebb4f6, #fcea77);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.connect-sec{
+    padding-top: 10vh;
+}
+
+.contact-logo{
+    /* width: 35vh; */
+    padding-top: 2vh;
+}
+
+.contact-address{
+    font-size: 3vh;
+    font-family:cursive;
+}
+
+.map{
+    height:49vh ;
+}
+
+.quote-text-contact{
+    font-size: 20px;
+    font-family: cursive;
+    color: rgb(111, 63, 0);
+}
+
+@media only screen  and (max-width: 790px) {
+
+.best-prod-col{
+    margin-top: 20px;
+    
+}
+
+.bg-img-abt-us {
+    background-image: url(images/bg-abt-us.jpg);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: 50% -100px;
+    background-size: cover;
+    z-index: 1;
+    height: 90vh;
+}
+
+.custom-nav-left-1,
+.custom-nav-right-1 {
+    border: 2px solid rgb(255, 153, 0);
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 50%;
+    height: 58px;
+    width: 45px;
+    margin: 10px 5px;
+    color: rgb(11, 129, 0);
+    font-size: 21px;
+    position: relative;
+    top: -95px;
+    margin: 0px 20px 0px 20px;
+    padding: 10px;
+    display: block;
+}
+
+.nav-sec{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.map{
+    width: 42vh;
+}
+}
