@@ -337,7 +337,7 @@
     background-position: 50% -100px;
     background-size: cover;
     z-index: 1;
-    height: 90vh;
+    height: 95vh;
 }
 
 .custom-nav-left-1,
@@ -362,6 +362,6 @@
     margin-right: 20px;
 }
 .map{
-    width: 42vh;
+    width: 38vh;
 }
 }
